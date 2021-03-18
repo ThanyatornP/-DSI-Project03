@@ -12,23 +12,8 @@ Data dictionary of final to 12 features is here:
 
 | Features              |type         |Description                                                          |
 | ---                   |---          |---                                                                  |
-| grlivarea             |integer      |Above grade (ground) living area square feet                         |
-| overallqual           |integer      |Overall material and finish quality (Scale 1-10)                     |
-| bsmtfinsf1            |float        |Basement Type 1 finished square feet                                 |
-| neighborhood_NridgHt  |object       |Physical locations within Ames city limits (Northridge Heights)      |
-| exterqual             |object       |Exterior material quality (Excellent,Good,Average/Typical,Fair,Poor) |
-| kitchenqual           |object       |Kitchen quality (Excellent,Good,Average/Typical,Fair,Poor)           |
-| neighborhood_StoneBr  |object       |Physical locations within Ames city limits (Stone Brook)             |
-| yearbuilt             |integer      |Original construction date                                           |
-| garagearea            |integer      |Size of garage in square feet                                        |
-| bldgtype_1Fam         |object       |Type of dwelling (Single-family Detached)                            |
-| totalbsmtsf           |integer      |Total square feet of basement area                                   |
-| saletype_New          |object       |Type of sale (Home just constructed and sold)                        |
-| bsmtexposure          |object       |Walkout or garden level basement walls                               |
-| miscfeature_Elev	    |object       |Miscellaneous feature not covered in other categories (Elevetor)     |
-|roofmatl_ClyTile	    |object       |Roof material made with clay or tile                                 |
-    
-Full data dictionary for the original Ames housing price dataset [here](https://www.kaggle.com/c/dsi-us-6-project-2-regression-challenge/data).
+| subreddit             |integer      |0 means Hiking, 1 means Scuba diving                                 |
+| clean_text            |object       |combine of clean text in title and self text                         |
 
 
 ### Model Selection

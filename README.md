@@ -7,8 +7,8 @@ I choosed scuba diving subreddit and hiking subreddit as my two topics of intere
 ### The problem statement is
 Scuba diving and Hiking are adventure sport that allow us to explore the world above and under water. Therefore for travel agency who needs to seek for adventure traveller among the people on the internet. Therefore by knowing a dominant words that people use to discuss and search about scuba diving and hiking can helps these travel agencies spot their customers.
 
-### Data Dictionary
-Data dictionary of final to 12 features is here:
+### Data 
+Data use for NLP classification:
 
 | Features              |type         |Description                                                          |
 | ---                   |---          |---                                                                  |

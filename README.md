@@ -8,12 +8,13 @@ I choosed scuba diving subreddit and hiking subreddit as my two topics of intere
 In recent years, tavellers become ever-more worldly, the desire for adventure increases. Scuba diving and Hiking are adventure sport that allow us to explore the world above and under water. Therefore for travel agency who needs to seek for adventure traveler among the people on the internet. Therefore by knowing a dominant words that people use to discuss and search about scuba diving and hiking can helps these travel agencies spot their customers.
 
 ### Executive summary
-Compared to the baseline accuracy score of 50% of classifying posts whether they are from the scuba iving subreddit, the best classification model is the logistic regression model with count vectorizer, which returned an accuracy score of 89.85%. The model performed better than multinomial naive bayes model and K nearest neighbors model.
+Compared to the baseline accuracy score of 50% of classifying posts whether they are from the scuba diving subreddit, the best classification model is the logistic regression model with count vectorizer, which returned an accuracy score of 89.85%. The model performed better than multinomial naive bayes model and K nearest neighbors model.
 
 The words that increase the likelihood of a particular post to be from the **scuba diving** and **hiking** are:  
 
 ![scuba_dom_words](https://user-images.githubusercontent.com/76549565/111750138-6d61e880-88c5-11eb-8cdf-2874abb995b7.png)
-![hike_dom_words](https://user-images.githubusercontent.com/76549565/111750176-75ba2380-88c5-11eb-81d8-d970f28ee315.png)
+![hike_dom_words](https://user-images.githubusercontent.com/76549565/111750709-21637380-88c6-11eb-84d9-24a8ad3cc70a.png)
+
 
 
 ### Data 

@@ -1,11 +1,20 @@
 # Project 3 - Web APIs & Classification on subreddit
 
-The objective of this project is to choose two subreddits from Reddit and use natural language processing and classification models to classify.
+The objective of this project is to choose two subreddits from Reddit and use natural language processing and classification models to classify posts into the correct subreddit .
 
 I choosed scuba diving subreddit and hiking subreddit as my two topics of interest because both of them are under same main community 'travel', but are also differentiated enough that it should be possible to train a machine learning model.
 
-### The problem statement is
-Scuba diving and Hiking are adventure sport that allow us to explore the world above and under water. Therefore for travel agency who needs to seek for adventure traveller among the people on the internet. Therefore by knowing a dominant words that people use to discuss and search about scuba diving and hiking can helps these travel agencies spot their customers.
+### The problem statement
+In recent years, tavellers become ever-more worldly, the desire for adventure increases. Scuba diving and Hiking are adventure sport that allow us to explore the world above and under water. Therefore for travel agency who needs to seek for adventure traveler among the people on the internet. Therefore by knowing a dominant words that people use to discuss and search about scuba diving and hiking can helps these travel agencies spot their customers.
+
+### Executive summary
+Compared to the baseline accuracy score of 50% of classifying posts whether they are from the scuba iving subreddit, the best classification model is the logistic regression model with count vectorizer, which returned an accuracy score of 89.85%. The model performed better than multinomial naive bayes model and K nearest neighbors model.
+
+The words that increase the likelihood of a particular post to be from the **scuba diving** and **hiking** are:  
+
+![scuba_dom_words](https://user-images.githubusercontent.com/76549565/111750138-6d61e880-88c5-11eb-8cdf-2874abb995b7.png)
+![hike_dom_words](https://user-images.githubusercontent.com/76549565/111750176-75ba2380-88c5-11eb-81d8-d970f28ee315.png)
+
 
 ### Data 
 Data use for NLP classification:
@@ -13,13 +22,14 @@ Data use for NLP classification:
 | Features              |type         |Description                                                          |
 | ---                   |---          |---                                                                  |
 | subreddit             |integer      |0 means Hiking, 1 means Scuba diving                                 |
-| clean_text            |object       |combine of clean text in title and self text                         |
+| title                 |object       |title of the post                                                    |
+| selftext              |object       |text of the post                                                     |
 
 
-### Model Selection
+### Resutls and Conclusion
 In this project we used Logistic Regression, Naive Bayes and K nearest neighbors to find best score, by using grid search to find the best parameters.
 
-As Logistic Regression Model with Count Vectorizer got highest score in testing data set at this point Logistic Regression Model with Count Vectorizer shows that CV Score on Traing data set and Test Score was closed together, which mean Logistic Regression Model with Count Vectorizer is the best model compares with others.
+As Logistic Regression Model with Count Vectorizer got highest score in testing data set at this point Logistic Regression Model with Count Vectorizer shows that CV Score on Training data set and Test Score was closed together, which mean Logistic Regression Model with Count Vectorizer is the best model compares with others.
 
 | Model | Vectorizer | CV Score on Traing data set | Test Score |
 | --- | --- | --- | --- |
@@ -32,71 +42,17 @@ As Logistic Regression Model with Count Vectorizer got highest score in testing 
 |KNeighbors NB|Count| 72.40% | 75.77% |
 |KNeighbors NB|Tfidf| 87.41% | 89.23% |
 
-### Analysis and Recommendation
+The accuracy of the final model shows that posts in scuba diving and hiking subreddit are fairly different, but still have a good amount of similarities
 
-In Model 4, lasso regression model was selected as its had best prediction value on house price in AMES shows in Kaggle out perform other linear regression models.  
+The differences are mainly due to creatures under the sea in scuba diving activity and how to describe location both activities
 
-After increased alpha ny 1500 to elimited the features, afterall we have got final 52 features (if count  same categorical as 1 features it will be final at 39 features) with RMSE in train data at 29403 and on Kaggle at 29377.
+### Recommendations
 
-**This showing that the final model can predict the house price +- around $29000**
-
-As of lasso was able to reveal which features affect sale price the most.
-
-The validation set errors are then plotted against number of predictors. RMSE appears to stop decreasing significantly from 30 predictors onwards.  
-Therefore, for the purpose of having a simpler and more easily interpretable model, look closer at 15 predictors onward RMSE tend to slightly decrese which the top 15 predictors will be used for the interpret the model which are:
-
-
-|Features|Coefficient|
-|---|---|
-|grlivarea|3223.872588|
-|overallqual|14035.774287|
-|bsmtfinsf1|8729.217990|
-|neighborhood_NridgHt	|7050.805490|
-|exterqual	|6996.110155|
-|kitchenqual	|5595.558339|
-|neighborhood_StoneBr	|5021.050500|
-|yearbuilt	|4839.733343|
-|garagearea	|4799.303515|
-|bldgtype_1Fam	|4738.694615|
-|totalbsmtsf	|4677.522978|
-|saletype_New	|4373.543453|
-|bsmtexposure	|4130.057381|
-|miscfeature_Elev	|-8993.741428|
-|roofmatl_ClyTile	|-11156.215150|
-
-![PJ2_RSMEbyFEATURES](https://user-images.githubusercontent.com/76549565/110248082-ebf38780-7fa1-11eb-9065-810ab4434ef4.png)
-
-### Recommendation to steakholders
-
-##### In conclusion the factors the result to house price that owner should consider: 
+For further model prediction improvement
 <ul>
-    <li>Above ground living area</li>
-    <li>Quality of overall condition </li>
-    <li>Age of the house</li>
-    <li>House in the area of Northridge Heights, Stone Brook are likely to have a good price</li>
-    <li>Size of garage</li>
-    <li>House with single family Detached</li>
-    <li>Size of the basement</li>
-    <li>New constructed house appears to have better sale price</li>
-    <li>Size of the basement</li>
-    <li>Lot size </li>
-    <li>property has significant slope from side to side </li>
-</ul> 
+    <li>Optimize stop words</li>
+    <li>Increase number of posts for training data to have more words </li>
+    <li>Include more text such as  comments in each posts</li>
+    <li>Use an image prediction as a features to classify </li>
+</ul>
 
-##### Value added to the house:  
-<ul>
-    <li>Renovate basement finished area (if exist)</li>
-    <li>Renovate external area of the house</li>
-    <li>Renovate kitchen </li>
-    <li>Renovate basement with good exposure </li>
-</ul> 
-    
-##### Thing that should avoid:  
-<ul>
-    <li>Clay or Tile roof material </li>
-    <li>Elevator in the house</li>
-</ul> 
-
-#### Limitation
-
-As this model is a prediction house price in Ames, Iowa which will not be able to use to predict the house price in others area.

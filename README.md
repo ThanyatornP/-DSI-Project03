@@ -5,7 +5,7 @@ The objective of this project is to choose two subreddits from Reddit and use na
 I choosed scuba diving subreddit and hiking subreddit as my two topics of interest because both of them are under same main community 'travel', but are also differentiated enough that it should be possible to train a machine learning model.
 
 ### The problem statement
-In recent years, tavellers become ever-more worldly, the desire for adventure increases. Scuba diving and Hiking are adventure sport that allow us to explore the world above and under water. Therefore for travel agency who needs to seek for adventure traveler among the people on the internet. Therefore by knowing a dominant words that people use to discuss and search about scuba diving and hiking can helps these travel agencies spot their customers.
+In recent years, travellers become ever-more worldly, the desire for adventure increases. Scuba diving and Hiking are adventure sport that allow us to explore the world above and under water. Therefore for travel agency who needs to seek for adventure traveler among the people on the internet. Therefore by knowing a dominant words that people use to discuss and search about scuba diving and hiking can helps these travel agencies spot their customers.
 
 ### Executive summary
 Compared to the baseline accuracy score of 50% of classifying posts whether they are from the scuba diving subreddit, the best classification model is the logistic regression model with count vectorizer, which returned an accuracy score of 89.85%. The model performed better than multinomial naive bayes model and K nearest neighbors model.

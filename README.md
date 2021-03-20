@@ -2,10 +2,10 @@
 
 The objective of this project is to choose two subreddits from Reddit and use natural language processing and classification models to classify posts into the correct subreddit .
 
-I choosed scuba diving subreddit and hiking subreddit as my two topics of interest because both of them are under same main community 'travel', but are also differentiated enough that it should be possible to train a machine learning model.
+In this project will classify Reddit posts from scuba diving subreddit and hiking subreddit as my two topics of interest because both of them are under same main community 'travel', but are also differentiated enough that it should be possible to train a machine learning model.
 
 ### The problem statement
-In recent years, travellers become ever-more worldly, the desire for adventure increases. Scuba diving and Hiking are adventure sport that allow us to explore the world above and under water. Therefore for travel agency who needs to seek for adventure traveler among the people on the internet. Therefore by knowing a dominant words that people use to discuss and search about scuba diving and hiking can helps these travel agencies spot their customers.
+In recent years, travellers become ever-more worldly, the desire for adventure increases. Scuba diving and Hiking are adventure sport that allow us to explore the world above and under water. Therefore for a travel agency who needs to seek for adventure traveler among the people on the internet. Therefore by knowing a dominant words that people use to discuss and search about scuba diving and hiking can helps the travel agencies spot their customers.
 
 ### Executive summary
 Compared to the baseline accuracy score of 50% of classifying posts whether they are from the scuba diving subreddit, the best classification model is the logistic regression model with count vectorizer, which returned an accuracy score of 89.85%. The model performed better than multinomial naive bayes model and K nearest neighbors model.
@@ -43,9 +43,9 @@ As Logistic Regression Model with Count Vectorizer got highest score in testing 
 |KNeighbors NB|Count| 72.40% | 75.77% |
 |KNeighbors NB|Tfidf| 87.41% | 89.23% |
 
-The accuracy of the final model shows that posts in scuba diving and hiking subreddit are fairly different, but still have a good amount of similarities
+Results from final model shows that posts in scuba diving and hiking subreddit are fairly different, and can classify with an accuracy of 89.86%
 
-The differences are mainly due to creatures under the sea in scuba diving activity and how to describe location both activities
+The differences of the words are mainly due to creatures under the sea in scuba diving activity and how to describe location both activities
 
 ### Recommendations
 
@@ -54,6 +54,6 @@ For further model prediction improvement
     <li>Optimize stop words</li>
     <li>Increase number of posts for training data to have more words </li>
     <li>Include more text such as  comments in each posts</li>
-    <li>Use an image prediction as a features to classify </li>
+    <li>Use an image as a features</li>
 </ul>
 

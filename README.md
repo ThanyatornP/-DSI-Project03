@@ -2,7 +2,7 @@
 
 The objective of this project is to choose two subreddits from Reddit and use natural language processing and classification models to classify posts into the correct subreddit .
 
-I choosed scuba diving subreddit and hiking subreddit as my two topics of interest because both of them are under same main community 'travel', but are also differentiated enough that it should be possible to train a machine learning model.
+In this project will classify Reddit posts from scuba diving subreddit and hiking subreddit as my two topics of interest because both of them are under same main community 'travel', but are also differentiated enough that it should be possible to train a machine learning model.
 
 ### The problem statement
 In recent years, travellers become ever-more worldly, the desire for adventure increases. Scuba diving and Hiking are adventure sport that allow us to explore the world above and under water. Therefore for travel agency who needs to seek for adventure traveler among the people on the internet. Therefore by knowing a dominant words that people use to discuss and search about scuba diving and hiking can helps these travel agencies spot their customers.

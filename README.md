@@ -43,9 +43,9 @@ As Logistic Regression Model with Count Vectorizer got highest score in testing 
 |KNeighbors NB|Count| 72.40% | 75.77% |
 |KNeighbors NB|Tfidf| 87.41% | 89.23% |
 
-The accuracy of the final model shows that posts in scuba diving and hiking subreddit are fairly different, but still have a good amount of similarities
+Results from final model shows that posts in scuba diving and hiking subreddit are fairly different, and can classify with an accuracy of 89.86%
 
-The differences are mainly due to creatures under the sea in scuba diving activity and how to describe location both activities
+The differences of the words are mainly due to creatures under the sea in scuba diving activity and how to describe location both activities
 
 ### Recommendations
 
@@ -54,6 +54,6 @@ For further model prediction improvement
     <li>Optimize stop words</li>
     <li>Increase number of posts for training data to have more words </li>
     <li>Include more text such as  comments in each posts</li>
-    <li>Use an image prediction as a features to classify </li>
+    <li>Use an image as a features</li>
 </ul>
 
